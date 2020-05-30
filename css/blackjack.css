@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0.5rem;
+    height: 100%;
+    border: 0.1rem solid black;
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 0.5rem 0;
+        width: 100%;
+        color: #0de40d;
+    }
+}
+
+.inner-container {
+    background: radial-gradient(green, black);
+}
+
+.lets_play {
+    font-size: 1.5rem;
+    margin: 0.2rem 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.blackjack_row_1,
+.btn_section,
+.table_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.1rem solid black;
+    padding: 1rem 0;
+}
+
+@media (max-width: 650px) {
+    .blackjack_row_1,
+    .table_section {
+        border: none;
+    }
+}
+
+.blackjack_row_1 {
+    color: white;
+    padding: 0.2rem;
+    height: 65%;
+}
+
+.card{
+    width: 90px;
+    margin: .5em .6em;
+}
+
+.btn_section {
+    padding: 0.5rem 0;
+}
+
+#your-box, #dealer-box {
+    color: white;
+    flex: 1;
+    margin: 0;
+    border: .2rem solid red;
+    padding: .5rem .5rem;
+    height: 100%;
+}
+
+/******Buttons ******/
+#hit_btn,
+#stand_btn,
+#deal_btn {
+    padding: 0.5em 0;
+    border: none;
+    border-radius: 0.2rem;
+    width: 3.8rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+#hit_btn {
+    background: blue;
+}
+
+#stand_btn {
+    background: orange;
+}
+
+#deal_btn {
+    background: green;
+}
+
+table,
+th,
+td {
+    padding: 0.2rem;
+    border: 0.15rem solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    width: 70px;
+    text-align: start;
+}
+
+td span {
+    font-weight: 700;
+}
